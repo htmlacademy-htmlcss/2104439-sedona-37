@@ -108,11 +108,43 @@
         <p><strong>Подпишитесь на рассылку</strong></p>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input type="text" value="Ваш e-mail">
-          <button class="button" type="submit">Подписаться</button>
-        </form>
+          <label class="visually-hidden" for="newsletter-email">Ваш e-mail</label>
+          <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+          <button class="button newsletter-button" type="submit">
+            <span class="visually-hidden">Подписаться</span>
+          </button>
       </section>
     </main>
+
+    <footer class="page-footer">
+      <section class="footer-social">
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="button" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Vkontakte</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Telegram</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Youtube</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="footer-contacts">
+        <address class="footer-contacts-address">
+          <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        </address>
+      </section>
+      <section class="footer-about">
+        <p class="about-text"><a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
+      </section>
+    </footer>
 
   </body>
 </html>
