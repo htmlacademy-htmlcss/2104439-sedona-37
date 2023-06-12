@@ -19,3 +19,33 @@ body {
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
+
+.page-header{
+  color:#000000;
+  background: #ffffff;
+  }
+
+.nav-link{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: inherit;
+  text-decoration: none;
+  text-align: center;
+
+}
+
+.button{
+  text-transform: uppercase;
+
+}
+
+.hero-image{
+  color:#000000;
+  background-color: rgba(51, 51, 51, 1);
+  background-image: url("../images/index-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+
+
+}
