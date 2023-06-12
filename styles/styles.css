@@ -523,16 +523,9 @@ background-color: #ffffff;
   border-color: transparent;
 }
 
-.page-footer{
-  color:#000000;
-  background: #ffffff;
-}
-
-
 .phone{
   font-size: 40px;
   line-height: 40px;
-  text-transform: uppercase;
   text-decoration: none;
   color:#000000;
 }
