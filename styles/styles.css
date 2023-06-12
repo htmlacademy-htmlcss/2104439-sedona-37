@@ -4,8 +4,8 @@ body {
   line-height: 26px;
   color: #000000;
   background-color: #ffffff;
-  text-align: center;
-}
+  margin: 0;
+  }
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -19,6 +19,19 @@ body {
   font-weight: 700;
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .page-header{
@@ -129,27 +142,15 @@ body {
 }
 
 .breadcrumbs-link-home{
-  background-image: url("../images/svg/breadcrumbs-link-home.svg");
+  background-image: url("../images/svg/breadcrumbs-link-home.svg")
+  url("../images/svg/breadcrumbs-link-arrow.svg");
   background-repeat: no-repeat;
 }
-/*
-.breadcrumbs-link{
-  background-image: url("../images/svg/breadcrumbs-link-arrow.svg");
-  background-repeat: no-repeat;
-}
-*/
 
 .breadcrumbs-link-current{
   color:#ffffff;
   font-size: 16px;
   line-height: 21px;
-}
-
-.filter-title{
-  font-weight: 700;
-  color:#ffffff;
-  font-size: 20px;
-  line-height: 24px;
 }
 
 .control-label{
