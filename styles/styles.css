@@ -36,6 +36,15 @@ html{
   box-sizing: border-box;
   background-color: #f2f2f2;
 }
+
+img{
+  max-width: 100%;
+  height: auto;
+
+  object-fit: cover;
+  object-position: center;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -49,34 +58,81 @@ html{
   overflow: hidden;
 }
 
-.page-header{
-  color:#000000;
-  background: #ffffff;
-  }
+.list-reset{
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
 
 .nav-link{
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  color: inherit;
+  color: #000000;
   text-decoration: none;
+}
+
+.user-link{
+  display:inline-block;
+  text-decoration: none;
+  width: 44px;
+  height: 44px;
+  background-repeat: no-repeat;
+}
+
+.user-link-search{
+  background-image: url(../images/svg/search.svg);
+}
+
+.user-link-favorites{
+  background-image: url(../images/svg/heart.svg);
+}
+
+.user-favorites-num{
+  font-size: 10px;
+  line-height: 10px;
+  color: #ffffff;
+
+  background-color: #7db54f;
+  border-radius: 10px;
 }
 
 .button{
+  display: inline-block;
+  margin: 0;
+  padding: 8px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "PT Sans", sans-serif;
+  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  color:#ffffff;
+  border: none;
+
   background-color: #756157;
   border-radius: 4px;
-  color:#ffffff;
-  padding: 8px;
+  cursor: pointer;
 }
 
+.button-light{
+  background-color: #82b3d3;
+}
+
+
 .hero{
+  text-align: center;
   color:#ffffff;
-  background-color: rgba(130, 179, 211, 1);
-  background-image: url("../images/index-background.jpg");
+
+  background-color:#4d799b;
+  background-image: url("../images/vector-index-backgroung.svg"),
+    url("../images/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  background-position: bottom, top;
 }
 
 .page-title{
