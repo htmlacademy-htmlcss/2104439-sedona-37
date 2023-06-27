@@ -134,7 +134,7 @@ body {
 .form-input {
   width: 100%;
   height: 48px;
-  padding: 12px;
+  padding: 12px 20px;
 
   font-weight: 700;
   font-size: 18px;
@@ -153,19 +153,22 @@ body {
 
 /* HEADER */
 
-.header {
+.page-header {
   position: relative;
   z-index: 1;
 }
 
 .page-nav {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
   padding: 0 70px;
   align-items: center;
   }
 
 .nav-logo {
+  display: block;
+  width: 140px;
+  height: 70px;
   margin-right: 28px;
   margin-bottom: -6px;
 }
@@ -175,7 +178,6 @@ body {
   gap: 32px;
   flex-wrap: wrap;
   max-width: 610px;
-  margin-right: auto;
 }
 
 .nav-link {
@@ -199,14 +201,9 @@ body {
   background-color: #756157;
 }
 
-.nav-button {
-  margin-left: 24px;
-}
-
 .user-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: auto;
 }
 
 .user-link {
@@ -248,6 +245,7 @@ body {
 }
 
 .nav-button {
+  margin-left: 24px;
   width: 160px;
   padding: 8px;
 }
@@ -308,14 +306,9 @@ body {
   margin: 0 auto;
 }
 
-.advantages-description-text {
-  width: 651px;
-  margin: 0 auto;
-}
-
 .advantages-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .advantages-item {
@@ -327,6 +320,7 @@ body {
 }
 
 .advantages-item-full {
+  grid-column: 1 / -1;
   width: 100%;
 
   color: #ffffff;
@@ -334,18 +328,18 @@ body {
   background-color: #82b3d3;
 }
 
+.advantages-item:last-child .advantages-image{
+  order: -1;
+}
+
 .advantages-container {
   display: flex;
   flex-wrap: wrap;
 }
 
-.advantages-item:last-child .advantages-image{
-  order: -1;
-}
-
 .advantages-content {
   padding: 115px 85px 100px;
-  width: 400px;
+  max-width: 400px;
   min-height: 385px;
 
   text-align: center;
@@ -395,14 +389,9 @@ body {
   margin: 0 auto 20px;
   }
 
-.services-description-text {
-  width: 510px;
-  margin: 0 auto;
-}
-
 .services-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .services-item {
@@ -414,7 +403,7 @@ body {
 }
 
 .services-content {
-  width: 400px;
+  max-width: 400px;
   min-height: 385px;
 
   padding: 183px 85px 81px;
@@ -447,7 +436,6 @@ body {
 /* ПОИСК */
 
 .search {
-  box-sizing: border-box;
   padding: 96px 70px;
 
   text-align: center;
@@ -462,7 +450,9 @@ body {
 }
 
 .search-button {
-  width: 376px;
+  max-width: 376px;
+  padding: 8px 50px;
+
 
   font-size: 20px;
   line-height: 36px;
@@ -488,6 +478,8 @@ body {
   }
 
 .subscribe-text {
+  width: 475px;
+  margin: 0 auto;
   margin-bottom: 54px;
 }
 
@@ -496,18 +488,14 @@ body {
 }
 
 .subscribe-form {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr auto;
+
   width: 684px;
   margin: 0 auto;
 }
 
-.form-input::placeholder {
-  opacity: 0.6;
-}
-
 .subscribe-input {
-  width: 452px;
   height: 52px;
 
   border-radius: 4px 0 0 4px;
@@ -609,20 +597,18 @@ body {
 }
 
 .filter-title {
-  display: flex;
-  flex-wrap: wrap;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  margin-bottom: 32px;
 }
 
 .filter-group-buttons {
   display: flex;
-  gap: 32px;
   flex-direction: column;
 }
 
-.control-item {
+.control-item:not(:last-child) {
   margin-bottom: 16px;
 }
 
@@ -638,10 +624,9 @@ body {
   flex-wrap: wrap;
   align-items: center;
   padding: 30px 70px;
-  }
+}
 
 .sorting-title {
-  display: block;
   margin-right: auto;
 
   text-align: left;
@@ -664,9 +649,9 @@ body {
 }
 
 .sorting-view {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   gap: 8px;
+  grid-template-columns: repeat(3, auto);
 }
 
 /* ВИДЫ КАРТОЧЕК */
@@ -705,15 +690,16 @@ body {
 }
 
 .hotels-list {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  flex-wrap: wrap;
   padding-bottom: 40px;
 }
 
 .hotels-item {
-  width: 340px;
-  min-height: 438px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px 20px;
   padding: 20px;
 
   border-radius: 4px;
@@ -725,6 +711,7 @@ body {
 }
 
 .hotels-img {
+  grid-column: 1 / -1;
   margin: 0;
 }
 
@@ -735,6 +722,7 @@ body {
 }
 
 .hotels-link {
+  grid-column: 1 / -1;
   color: #000000;
   text-decoration: none;
 }
@@ -745,7 +733,7 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-}
+ }
 
 .hotels-text + .hotels-text {
   text-align: right;
@@ -815,6 +803,8 @@ body {
   background-color: #82b3d3;
   border: 1px solid #82b3d3;
   border-radius: 4px;
+
+  padding: 5px;
 }
 
 .pagination-link-current {
@@ -838,8 +828,8 @@ body {
 /* ФУТЕР */
 
 .page-footer {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   padding: 30px 70px;
   align-items: center;
 }
