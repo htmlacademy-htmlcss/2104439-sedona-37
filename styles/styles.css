@@ -100,13 +100,82 @@ body {
   cursor: pointer;
 }
 
+.button:hover {
+  background-color: #615048;
+}
+
+.button:focus {
+  background-color: #615048;
+  outline: #615048;
+}
+
+.button:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.30);
+ }
+
+.button:disabled {
+  background-color: #E5E5E5;
+}
+
 .button-light {
   background-color: #82b3d3;
+}
+
+.button-light:hover {
+  background-color: #68A2CA;
+}
+
+.button-light:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.30);
+ }
+
+.button-light:disabled {
+  background-color: #E5E5E5;
+}
+
+
+.hotels-favorites-active {
+  background-color: #7db54f;
+}
+
+.hotels-favorites-active:hover {
+  background-color: #6C9E42;
+}
+
+.hotels-favorites-active:active {
+  background-color: #7db54f;
+  color: rgba(255, 255, 255, 0.30);
+ }
+
+.hotels-favorites-active:disabled {
+  background-color: #E5E5E5;
 }
 
 .button-transparent {
   background-color: rgba(255, 255, 255, 0);
 }
+
+.button-transparent:hover {
+  background-color: rgba(255, 255, 255, 0);
+  color: rgba(255, 255, 255, 0.50);
+}
+
+.button-transparent:focus {
+  background-color: rgba(255, 255, 255, 0);
+  color: rgba(255, 255, 255, 0.50);
+  border: 3px solid #83B3D3;
+}
+
+.button-transparent:active {
+  color: rgba(255, 255, 255, 0.30);
+}
+
+.button-transparent:disabled {
+  color: rgba(255, 255, 255, 0.30);
+}
+
 
 /* ОБЩИЕ ЗАГОЛОВКИ И ТЕКСТЫ */
 
@@ -192,6 +261,19 @@ body {
   text-decoration: none;
 }
 
+.nav-link:hover {
+  color: #615048;
+}
+
+.nav-link:focus {
+  border: #68A2CA;
+  border-radius: 2px;
+}
+
+.nav-link:active {
+  color: #756157;
+}
+
 .nav-current::before {
   position: absolute;
   content: "";
@@ -225,6 +307,21 @@ body {
 
 .user-link-favorites {
   background-image: url("../images/svg/heart.svg");
+}
+
+.user-link-search:hover,
+.user-link-favorites:hover {
+  opacity: 0.6;
+}
+
+.user-link-search:focus,
+.user-link-favorites:focus {
+  opacity: 0.9;
+}
+
+.user-link-search:active,
+.user-link-favorites:active {
+  opacity: 0.3;
 }
 
 .user-favorites-num {
@@ -358,6 +455,23 @@ body {
   line-height: 28px;
   color: #000000;
   text-transform: uppercase;
+}
+
+.advantages-container .advantages-title::after {
+  background-color: #ffffff;
+}
+
+.advantages-title::after {
+  display: block;
+  content: "";
+
+  width: 60px;
+  height: 2px;
+  background-color: #000000;
+  opacity: 0.3;
+  margin: auto;
+  margin-top: 30px;
+
 }
 
 .advantages-container .advantages-title {
@@ -571,6 +685,14 @@ body {
   text-decoration: none;
 }
 
+.breadcrumbs-link:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .breadcrumbs-link-home {
   display: block;
   width: 13px;
@@ -648,6 +770,19 @@ body {
   border-radius: 4px;
 }
 
+.sorting-select:hover {
+  border: 2px solid #68A2CA;
+}
+
+.sorting-select:focus {
+  border: 2px solid #68A2CA;
+}
+
+.sorting-select:disabled {
+  border: 2px solid rgba(0, 0, 0, 0.30);
+  color: rgba(0, 0, 0, 0.30);
+}
+
 .sorting-view {
   display: grid;
   gap: 8px;
@@ -665,6 +800,18 @@ body {
   background-position: center;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
+}
+
+.view-link:hover {
+  border-color: #000;
+}
+
+.view-link:focus {
+  border-color: #68a2ca;
+}
+
+.view-link:active {
+  border-color: #000;
 }
 
 .view-link-active {
@@ -739,10 +886,6 @@ body {
   text-align: right;
 }
 
-.hotels-favorites-active {
-  background-color: #7db54f;
-}
-
 .hotels-rating-star {
   display: block;
   height: 37px;
@@ -807,6 +950,18 @@ body {
   padding: 5px;
 }
 
+.pagination-link:hover {
+  background-color:#68A2CA;
+}
+
+.pagination-link:focus {
+  background-color:#68A2CA;
+}
+
+.pagination-link:active{
+  color:rgba(255, 255, 255, 0.30);
+}
+
 .pagination-link-current {
   color: #000000;
 
@@ -841,6 +996,24 @@ body {
   max-width: 150px;
 }
 
+.social-icon{
+  fill: #83B3D3;
+}
+
+.social-icon:hover {
+  fill: #68a2ca;
+}
+
+.social-icon:focus {
+  fill: #68a2ca;
+  outline: #615048;
+}
+
+.social-icon:active {
+  fill: rgba(104, 162, 202, 0.3);
+}
+
+
 .phone {
   margin: 0 auto;
 
@@ -850,3 +1023,31 @@ body {
   color: #000000;
   text-decoration: none;
   }
+
+.phone:hover {
+  color: #756157;
+}
+
+.phone:focus {
+  color: #756157;
+}
+
+.phone:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.footer-dev-icon {
+  fill: #000000;
+}
+
+.footer-dev-icon:hover {
+  fill: #756157;
+}
+
+.footer-dev-icon:focus {
+  fill: #756157;
+}
+
+.footer-dev-icon:active {
+  fill: rgba(117, 97, 87, 0.3);
+}
