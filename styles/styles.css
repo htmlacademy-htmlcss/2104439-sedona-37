@@ -76,6 +76,7 @@ img {
   border: 0;
 
   clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
 }
 
@@ -236,6 +237,9 @@ img {
   height: 70px;
   margin-right: 23px;
   margin-bottom: -6px;
+
+  position: relative;
+  align-self: start;
 }
 
 .nav-logo:focus,
@@ -249,7 +253,7 @@ img {
 
 .nav-list {
   display: flex;
-  gap: 32px;
+  gap: 0 32px;
   flex-wrap: wrap;
 }
 
@@ -346,6 +350,7 @@ img {
 .nav-button {
   width: 160px;
   padding: 8px;
+  overflow-wrap: break-word;
 }
 
 
@@ -457,6 +462,7 @@ img {
   line-height: 28px;
   color: #000000;
   text-transform: uppercase;
+  overflow-wrap: break-word;
 }
 
 .advantages-container .advantages-title {
@@ -538,6 +544,7 @@ img {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  overflow-wrap: break-word;
 }
 
 .services-content-home {
@@ -615,7 +622,7 @@ img {
 }
 
 .subscribe-input {
-  height: 52px;
+  height: 100%;
 
   border-radius: 4px 0 0 4px;
 }
@@ -780,7 +787,6 @@ img {
   border-radius: 4px;
 
   -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
 }
 
@@ -812,6 +818,7 @@ img {
 .control-input:hover + .control-label {
   opacity: 0.6;
 }
+
 .control-input:focus,
 .control-input:focus-visible {
   outline: none;
@@ -860,6 +867,7 @@ img {
 .range-input::-webkit-inner-spin-button {
   margin: 0;
 
+  -webkit-appearance: none;
   appearance: none;
 }
 
@@ -986,7 +994,6 @@ img {
   border-radius: 4px;
 
   -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
 }
 
@@ -1125,6 +1132,7 @@ img {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  overflow-wrap: break-word;
  }
 
 .hotels-text + .hotels-text {
@@ -1273,10 +1281,9 @@ img {
 }
 
 .social-link:hover,
-.social-link:focus {
+.social-link:focus,
+.social-link:focus-visible {
   color: #68a2ca;
-
-  outline: none;
 }
 
 .social-link:active {
@@ -1345,14 +1352,14 @@ img {
   background-color:rgba(242, 242, 242, 0.8);
 }
 
-/* .modal-container-close {
+.modal-container-close {
   display: none;
-} */
+}
 
 .modal {
   position: relative;
 
-  margin: 100px auto auto;
+  margin: auto;
   padding: 64px 70px;
 
   background-color: #ffffff;
