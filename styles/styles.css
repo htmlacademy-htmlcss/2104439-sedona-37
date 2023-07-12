@@ -384,7 +384,7 @@ img {
 
 .hero {
   position: relative;
-  padding: 50px 70px 82px;
+  padding: 50px 70px 81px;
 
   text-align: center;
   color: #ffffff;
@@ -403,7 +403,7 @@ img {
   left: 0;
 
   width: 100%;
-  height: 59px;
+  height: 58px;
 
   background-image: url("../images/vector-index-backgroung.svg");
   background-repeat: no-repeat;
@@ -420,7 +420,7 @@ img {
 
 .advantages-description {
   text-align: center;
-  padding: 69px 70px 90px;
+  padding: 71px 70px 90px;
 }
 
 .advantages-description-title {
@@ -870,6 +870,8 @@ img {
 .range-item label {
   position: absolute;
   right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 
   padding: 11px 20px;
 
