@@ -45,7 +45,6 @@ img {
   height: auto;
 
   object-fit: cover;
-  object-position: center;
 }
 
 
@@ -249,7 +248,7 @@ img {
   align-items: center;
   padding: 0 70px;
   gap: 21px;
-  }
+}
 
 .nav-logo {
   display: block;
@@ -460,7 +459,7 @@ img {
 }
 
 .advantages-content {
-  padding: 115px 85px 100px;
+  padding: 115px 80px 100px;
   max-width: 400px;
   min-height: 385px;
 
@@ -620,7 +619,7 @@ img {
 
 .subscribe-title {
   margin-bottom: 20px;
-  }
+}
 
 .subscribe-text {
   width: 475px;
@@ -1159,7 +1158,7 @@ img {
   font-size: 24px;
   line-height: 28px;
   overflow-wrap: break-word;
- }
+}
 
 .hotels-text + .hotels-text {
   text-align: right;
